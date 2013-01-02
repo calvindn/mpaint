@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+	<head>
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="node_modules/socket.io/node_modules/socket.io-client/dist/socket.io.js"></script>
+		<script language=JavaScript src="javascript/canvas.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<title>Community Canvas</title>
+		<link rel="stylesheet" href="colorpicker/css/colorpicker.css" type="text/css" />
+	    <link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/layout.css" />
+		<script type="text/javascript" src="colorpicker/js/jquery.js"></script>
+		<script type="text/javascript" src="colorpicker/js/colorpicker.js"></script>
+	    <script type="text/javascript" src="colorpicker/js/eye.js"></script>
+	    <script type="text/javascript" src="colorpicker/js/utils.js"></script>
+	    <script type="text/javascript" src="colorpicker/js/layout.js?ver=1.0.2"></script>
+	</head>
+	<body>
+	
+		<canvas id="myCanvas"/></canvas>
+		<div id="menuBorder"></div>
+		<div id="logo"></div>
+		<div id="menu">
+			<h3>menu</h3>
+			<div id="buttons">
+				<ul>
+				<li><button id="clearButton">clear</button>
+				<li><button id="circleButton">circle</button>
+				<li><button id="rectButton">rectangle</button>
+				<li><button id="eraseButton">eraser</button>
+				</ul>
+			</div>
+			<h2 id="brushSize">brush size = 2</h2>
+			<div id="colorSelector"><div style="background-color: #0000ff"></div></div>
+		</div>
+		
+		<h2 id="status"></h2>
+		<h2 id="status2"></h2>
+		
+	</body>
+	<footer>
+		<p>developed on chrome 22</p>
+	</footer>
+</html>
